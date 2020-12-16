@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent intent = new Intent(this, Splash.class);
+        startActivity(intent);
+
         Button imageButton = (Button) findViewById(R.id.btn1);
         imageButton.setOnClickListener(new View.OnClickListener() {
 
